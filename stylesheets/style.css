@@ -1,0 +1,160 @@
+/* Font Awesome - http://fontawesome.io */
+@font-face {
+    font-family:'FontAwesome';
+    src:url(../fonts/fontawesome-webfont.eot?v=4.3.0);
+    src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"),url(../fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"),url(../fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"),url(../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+.fa {
+    font-family:'FontAwesome';
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    transform:translate(0,0)
+}
+
+.fa:before {
+    margin-right:.2em
+}
+
+.email:before {
+    content:"\f003"
+}
+
+.twitter:before {
+    content:"\f081"
+}
+
+.gplus:before {
+    content:"\f0d4"
+}
+
+.github:before {
+    content:"\f092"
+}
+
+.linkedin:before {
+    content:"\f08c"
+}
+
+/* Basic Formatting */
+* {
+    color:#253031
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:#03254e
+}
+
+h2,h3,h4,h5,h6 {
+    border-bottom:solid 1px #03254e
+}
+
+/* Profile Formatting */
+.contact {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img.profile-img {
+    width:10em;
+    height:10em;
+/*     padding:2px; */
+    border:1px solid #03254e;
+    /* box-shadow:2px 2px 1px #253031; */
+    margin:0 auto;
+    border-radius:1em;
+    -moz-border-radius:1em;
+    -webkit-border-radius:1em
+}
+
+header {
+    float:left;
+    width:20%;
+    position:fixed;
+    margin-left:2em
+}
+
+/* Body Formatting */
+section {
+    position:relative;
+    left:20em;
+    width:80%
+}
+
+/* Tag Formatting - http://cssglobe.com/pure-css3-post-tags/ */
+.skills {
+    margin:0;
+    padding:0 0 1em;
+    list-style:none
+}
+
+.skills li,.skills a {
+    float:left;
+    height:1.5em;
+    line-height:1.5em;
+    position:relative
+}
+
+.skills a {
+    margin-left:1.5em;
+    padding:0 .75em;
+    background:#2978a0;
+    color:#fff;
+    text-decoration:none;
+    -moz-border-radius-bottomright:.4em;
+    -webkit-border-bottom-right-radius:.4em;
+    border-bottom-right-radius:.4em;
+    -moz-border-radius-topright:.4em;
+    -webkit-border-top-right-radius:.4em;
+    border-top-right-radius:.4em
+}
+
+.skills a:before {
+    content:"";
+    float:left;
+    position:absolute;
+    top:0;
+    left:-12px;
+    width:0;
+    height:0;
+    border-color:transparent #2978a0 transparent transparent;
+    border-style:solid;
+    border-width:12px 12px 12px 0
+}
+
+.skills a:after {
+    content:"";
+    position:absolute;
+    top:10px;
+    left:0;
+    float:left;
+    width:4px;
+    height:4px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    background:#fff;
+    -moz-box-shadow:-1px -1px 2px #004977;
+    -webkit-box-shadow:-1px -1px 2px #004977;
+    box-shadow:-1px -1px 2px #004977
+}
+
+/* Footer Formatting */
+footer {
+    margin-left:2em;
+    float:left;
+    width:20%;
+    position:fixed;
+    bottom:50px;
+    font-size:.75em
+}
+
+footer>p {
+    padding:0;
+    margin:0
+}

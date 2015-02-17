@@ -1,0 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+
+* {font-family: 'Merriweather', serif;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;}

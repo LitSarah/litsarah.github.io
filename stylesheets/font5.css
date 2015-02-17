@@ -1,0 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Flamenco);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,400italic);
+
+* {font-family: 'Asap', sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Flamenco', cursive;}
