@@ -1,44 +1,4 @@
-/* Font Awesome - http://fontawesome.io */
-@font-face {
-    font-family:'FontAwesome';
-    src:url(../fonts/fontawesome-webfont.eot?v=4.3.0);
-    src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"),url(../fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"),url(../fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"),url(../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");
-    font-weight:400;
-    font-style:normal
-}
 
-.fa {
-    font-family:'FontAwesome';
-    font-size:inherit;
-    text-rendering:auto;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    transform:translate(0,0)
-}
-
-.fa:before {
-    margin-right:.2em
-}
-
-.email:before {
-    content:"\f003"
-}
-
-.twitter:before {
-    content:"\f081"
-}
-
-.gplus:before {
-    content:"\f0d4"
-}
-
-.github:before {
-    content:"\f092"
-}
-
-.linkedin:before {
-    content:"\f08c"
-}
 
 /* Basic Formatting */
 * {
@@ -46,18 +6,43 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color:#03254e
+    color:#03254e;
 }
-
 h2,h3,h4,h5,h6 {
+
     border-bottom:solid 1px #03254e
 }
+
+.code {
+    font-family: 'Fira Mono';
+}
+
+/* Background Formatting */
+body {
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
+
+
+  background-repeat: no-repeat;
+}
+
 
 /* Profile Formatting */
 .contact {
     list-style:none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.about {
+    text-align: center;
 }
 
 img.profile-img {
@@ -93,14 +78,14 @@ section {
     list-style:none
 }
 
-.skills li,.skills a {
+.skills li, .skills span{
     float:left;
     height:1.5em;
     line-height:1.5em;
     position:relative
 }
 
-.skills a {
+.skills span {
     margin-left:1.5em;
     padding:0 .75em;
     background:#2978a0;
@@ -114,7 +99,7 @@ section {
     border-top-right-radius:.4em
 }
 
-.skills a:before {
+.skills span:before {
     content:"";
     float:left;
     position:absolute;
@@ -127,7 +112,7 @@ section {
     border-width:12px 12px 12px 0
 }
 
-.skills a:after {
+.skills span:after {
     content:"";
     position:absolute;
     top:10px;
