@@ -75,9 +75,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .sidebar-module {
     margin: 0 -15px 15px;
     padding: 15px;
-    & img {
-      margin-bottom: (@padding-base-vertical *2);
-    }
     & p:last-child, & ul:last-child, & ol:last-child {
         margin-bottom: 0;
     }
@@ -166,12 +163,10 @@ code {
 }
 
 .well {
-        text-align: center;
-    & img {
-        margin-bottom: 1em;
-    }
+    text-align: center;
     & .list-group {
         text-align: left;
+        margin-top: (@padding-base-vertical * 2);
     }
 }
 

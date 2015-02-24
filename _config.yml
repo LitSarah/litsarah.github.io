@@ -8,3 +8,8 @@ author :
   linkedin: litsarah
 
 timezone: America/Chicago
+
+gems:
+    - jekyll-sitemap
+
+highlighter: pygments
