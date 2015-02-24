@@ -1,157 +1,36 @@
 ---
 layout: default
+title: {{ site.title }}
 ---
 
-<!DOCTYPE html>
+<section class="blog-header" id="about">
+    <h1 class="blog-title">I'm Sarah Little and I am a budding analyst. I make knowledge accessable to everyone.</h1>
+</section>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="" name="description">
-    <meta content="Sarah Little" name="author">
-    <title>LitSarah</title>
-    <!-- <link href="images/favicon.ico" rel="icon"> -->
+<section class="blog-post" id="biography">
+    <p>A healthy interest in technology runs in my blood. My grandfather repaired televisions for a living. My uncle's a tinkerer. My brother administers virtual machines. And days out with my mother usually involved the gentle hum and chill air of server rooms.</p>
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic|Fira+Mono:400,700|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/tags.css" rel="stylesheet">
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]>
-      <script src="js/ie8-responsive-file-warning.js"></script>
-    <![endif]-->
+    <p>From the days of <code>C:/Windows run</code> to beautiful data-driven web pages, I seek to expand my skills in fun and interactive ways. My side projects generally involve one of my many other hobbies, such as photography, swing dancing, and bartending, which are generally more interesting than the retail systems I deal with during the day.</p>
+</section>
 
-    <script src="../docs/assets/js/ie-emulation-modes-warning.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+<section class="blog-post" id="skills" itemscope itemtype="http://schema.org/ItemList">
+    <h2 class="blog-post-title" itemprop="name">What I Work With</h2>
 
-<body>
-    <!--
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Home</a>
-          <a class="blog-nav-item" href="#">New features</a>
-          <a class="blog-nav-item" href="#">Press</a>
-          <a class="blog-nav-item" href="#">New hires</a>
-          <a class="blog-nav-item" href="#">About</a>
-        </nav>
-      </div>
-    </div>
-    -->
+    <ul class="tags tag-primary">
+    {% for skill in site.data.skills | sort %}
+        <li itemprop="itemListElement">{{ skill.skill }}</li>
+    {% endfor %}
+    </ul>
+</section>
 
-    <div class="container">
-        <div class="row">
+<section class="blog-post" id="portfolio" itemscope itemtype="http://schema.org/ItemList">
+    <h2 class="blog-post-title" itemprop="name">What I've Done</h2>
 
-            <div class="col-sm-3 blog-sidebar">
-                <div class="well well-sm" itemscope itemtype="http://schema.org/Person">
-                    <a data-toggle="collapse" data-target=".visible-xs" aria-expanded="false" aria-controls="collapse-contact">
-                        <img alt="Sarah Little" class="img-rounded" src="images/profile.png" itemprop="image">
-                    </a>
-                    <div class="visible-md visible-lg visible-sm hidden-xs">
-                    <div class="list-group">
-                            <a href="mailto:litsarah+github@gmail.com" itemprop="email" class="fa fa-envelope-o list-group-item">&nbsp;Email</a>
-
-                            <a class="fa fa-github-square list-group-item" itemprop="url" href="https://github.com/LitSarah" rel="me" title="View my GitHub">&nbsp;GitHub</a>
-
-                            <a class="fa fa-twitter-square list-group-item" itemprop="url" href="http://twitter.com/litsarah" rel="me" title="Follow me on Twitter">&nbsp;Twitter</a>
-
-                            <a class="fa fa-linkedin-square list-group-item" itemprop="url" href="http://www.linkedin.com/in/litsarah/en" rel="me" title="View my LinkedIn profile">&nbsp;LinkedIn</a>
-
-                            <a class="fa fa-google-plus-square list-group-item" itemprop="url" href="https://plus.google.com/102352359605367746250" rel="me" title="View my Google+ profile">&nbsp;Google+</a>
-                    </div>
-                    </div>
-                    <div class="collapse visible-xs hidden-md hidden-lg hidden-sm" id="collapse-contact">
-                    <div class="list-group">
-                            <a href="mailto:litsarah+github@gmail.com" itemprop="email" class="fa fa-envelope-o list-group-item">&nbsp;Email</a>
-
-                            <a class="fa fa-github-square list-group-item" itemprop="url" href="https://github.com/LitSarah" rel="me" title="View my GitHub">&nbsp;GitHub</a>
-
-                            <a class="fa fa-twitter-square list-group-item" itemprop="url" href="http://twitter.com/litsarah" rel="me" title="Follow me on Twitter">&nbsp;Twitter</a>
-
-                            <a class="fa fa-linkedin-square list-group-item" itemprop="url" href="http://www.linkedin.com/in/litsarah/en" rel="me" title="View my LinkedIn profile">&nbsp;LinkedIn</a>
-
-                            <a class="fa fa-google-plus-square list-group-item" itemprop="url" href="https://plus.google.com/102352359605367746250" rel="me" title="View my Google+ profile">&nbsp;Google+</a>
-                    </div>
-                    </div>
-                </div>
-            </div><!-- /.blog-sidebar -->
-
-            <div class="col-sm-8 col-sm-push-1 blog-main">
-                <section class="blog-header" id="about">
-                    <h1 class="blog-title">I'm Sarah Little and I am a budding analyst. I make knowledge accessable to everyone.</h1><!-- <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p> -->
-                </section>
-
-                <section class="blog-post" id="biography">
-                    <p>A healthy interest in technology runs in my blood. My grandfather repaired televisions for a living. My uncle's a tinkerer. My brother administers virtual machines. And days out with my mother usually involved the gentle hum and chill air of server rooms.</p>
-
-                    <p>From the days of <code>C:/Windows run</code> to beautiful data-driven web pages, I seek to expand my skills in fun and interactive ways. My side projects generally involve one of my many other hobbies, such as photography, swing dancing, and bartending, which are generally more interesting than the retail systems I deal with during the day.</p>
-                </section>
-
-                <section class="blog-post" id="skills" itemscope itemtype="http://schema.org/ItemList">
-                    <h2 class="blog-post-title" itemprop="name">What I Work With</h2>
-
-                    <ul class="tags tag-primary">
-                        <li itemprop="itemListElement">HTML5</li>
-                        <li itemprop="itemListElement">CSS3</li>
-                        <li itemprop="itemListElement">XML</li>
-                        <li itemprop="itemListElement">Python</li>
-                        <li itemprop="itemListElement">SQL</li>
-                        <li itemprop="itemListElement">Git</li>
-                        <li itemprop="itemListElement">Raspberry Pi</li>
-                        <li itemprop="itemListElement">Bootstrap</li>
-                        <li itemprop="itemListElement">Less</li>
-                    </ul>
-                </section>
-
-                <section class="blog-post" id="portfolio" itemscope itemtype="http://schema.org/ItemList">
-                    <h2 class="blog-post-title" itemprop="name">What I've Done</h2>
-
-                    <dl class="portfolio">
-                      {% for repository in site.github.public_repositories %}
-                        <dt class="fa fa-github-square" itemprop="itemListElement">
-                            <a itemprop="url" href="{{ repository.html_url }}">{{ repository.name }}</a> </dt>
-                        <dd itemprop="description">{{ repository.description }}</dd>
-                      {% endfor %}
-                    </dl>
-                </section>
-                <!-- 
-                    <nav>
-                        <ul class="pager">
-                          <li><a href="#">Previous</a></li>
-                          <li><a href="#">Next</a></li>
-                        </ul>
-                    </nav> 
-                    -->
-            </div>
-        </div><!-- /.row -->
-
-    <footer class="blog-footer col-sm-4">
-        <!-- <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
-        <!-- <p><a href="#">Back to top</a></p> -->
-        <p>Built with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://lesscss.org/">Less</a>.</p>
-        <p>Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
-        <p>Avatar from <a href="http://illustmaker.abi-station.com/index_en.shtml">AbiStation</a>.</p>
-    </footer>
-    </div><!-- /.container -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-</body>
-</html>
+    <dl class="portfolio">
+      {% for repository in site.github.public_repositories %}
+        <dt class="fa fa-github-square" itemprop="itemListElement">
+            <a itemprop="url" href="{{ repository.html_url }}">{{ repository.name }}</a> </dt>
+        <dd itemprop="description">{{ repository.description }}</dd>
+      {% endfor %}
+    </dl>
+</section>
