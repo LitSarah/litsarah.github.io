@@ -1,9 +1,12 @@
-@import url('..\less\variables.less');
+@import url('..\..\bootstrap-3.3.2\less\variables.less');
+@import url('..\..\bootstrap-3.3.2\less\mixins.less');
+
 body {
     color: @gray;
     font-family: @font-family-base;
     font-size: @font-size-large;
     padding: (@padding-base-vertical * 3) 0 0 0;
+    #gradient.vertical(@gray-lighter; @body-bg);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -120,14 +123,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     //margin-left:2em;
     //float:left;
     //width:100%;
-    position:fixed;
-    bottom:50px;
-    height: 50px;
+    //position:relative;
+    //bottom:50px;
+    //height: 50px;
+    clear: both;
+    display: inline-block;
 
     background-color: transparent;
     //border-top: 1px solid @gray-light;
     color:  @gray-light;
-    text-align: right;
+    text-align: left;
     font-size: @font-size-small;
     & p:last-child {
         margin-bottom: 0;
@@ -150,10 +155,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 dd {
   margin-left: 2em;
 }
-/* 
-.img-rounded {
-  border-radius: @border-radius-large;
-    -moz-border-radius:@border-radius-large;
-    -webkit-border-radius:@border-radius-large;
-  padding-bottom: (@padding-base-vertical * 2 );
-} */
+
+a {
+    font-family: @font-family-base;
+}
+
+code {
+  color: @brand-primary;
+  background-color: lighten(@brand-primary, 50%);
+}
+
+.well {
+        text-align: center;
+    & img {
+        margin-bottom: 1em;
+    }
+    & .list-group {
+        text-align: left;
+    }
+}
+
+.fa{
+    font-family: FontAwesome, @font-family-base;
+}

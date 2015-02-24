@@ -7,14 +7,18 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="" name="description">
     <meta content="Sarah Little" name="author">
-    <!-- <link href="images/favicon.ico" rel="icon"> -->
-    <link href="http://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet" type="text/css">
-
     <title>LitSarah</title>
+    <!-- <link href="images/favicon.ico" rel="icon"> -->
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic|Fira+Mono:400,700|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/tags.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
       <script src="js/ie8-responsive-file-warning.js"></script>
@@ -47,32 +51,36 @@
         <div class="row">
 
             <div class="col-sm-3 blog-sidebar">
-                <div class="sidebar-module well" itemscope itemtype="http://schema.org/Person">
-                    <img alt="Sarah Little" class="img-rounded" src="images/profile.png" itemprop="image">
+                <div class="well well-sm" itemscope itemtype="http://schema.org/Person">
+                    <a data-toggle="collapse" data-target=".visible-xs" aria-expanded="false" aria-controls="collapse-contact">
+                        <img alt="Sarah Little" class="img-rounded" src="images/profile.png" itemprop="image">
+                    </a>
+                    <div class="visible-md visible-lg visible-sm hidden-xs">
+                    <div class="list-group">
+                            <a href="mailto:litsarah+github@gmail.com" itemprop="email" class="fa fa-envelope-o list-group-item">&nbsp;Email</a>
 
-                    <h4>Contact</h4>
+                            <a class="fa fa-github-square list-group-item" itemprop="url" href="https://github.com/LitSarah" rel="me" title="View my GitHub">&nbsp;GitHub</a>
 
-                    <ul class="contact">
-                        <li class="fa fa-envelope-o">
-                            <a href="mailto:litsarah+github@gmail.com" itemprop="email">Email</a>
-                        </li>
+                            <a class="fa fa-twitter-square list-group-item" itemprop="url" href="http://twitter.com/litsarah" rel="me" title="Follow me on Twitter">&nbsp;Twitter</a>
 
-                        <li class="fa fa-github-square">
-                            <a itemprop="url" href="https://github.com/LitSarah" rel="me" title="View my GitHub">GitHub</a>
-                        </li>
+                            <a class="fa fa-linkedin-square list-group-item" itemprop="url" href="http://www.linkedin.com/in/litsarah/en" rel="me" title="View my LinkedIn profile">&nbsp;LinkedIn</a>
 
-                        <li class="fa fa-twitter-square">
-                            <a itemprop="url" href="http://twitter.com/litsarah" rel="me" title="Follow me on Twitter">Twitter</a>
-                        </li>
+                            <a class="fa fa-google-plus-square list-group-item" itemprop="url" href="https://plus.google.com/102352359605367746250" rel="me" title="View my Google+ profile">&nbsp;Google+</a>
+                    </div>
+                    </div>
+                    <div class="collapse visible-xs hidden-md hidden-lg hidden-sm" id="collapse-contact">
+                    <div class="list-group">
+                            <a href="mailto:litsarah+github@gmail.com" itemprop="email" class="fa fa-envelope-o list-group-item">&nbsp;Email</a>
 
-                        <li class="fa fa-linkedin-square">
-                            <a itemprop="url" href="http://www.linkedin.com/in/litsarah/en" rel="me" title="View my LinkedIn profile">LinkedIn</a>
-                        </li>
+                            <a class="fa fa-github-square list-group-item" itemprop="url" href="https://github.com/LitSarah" rel="me" title="View my GitHub">&nbsp;GitHub</a>
 
-                        <li class="fa fa-google-plus-square">
-                            <a itemprop="url" href="https://plus.google.com/102352359605367746250" rel="me" title="View my Google+ profile">Google+</a>
-                        </li>
-                    </ul>
+                            <a class="fa fa-twitter-square list-group-item" itemprop="url" href="http://twitter.com/litsarah" rel="me" title="Follow me on Twitter">&nbsp;Twitter</a>
+
+                            <a class="fa fa-linkedin-square list-group-item" itemprop="url" href="http://www.linkedin.com/in/litsarah/en" rel="me" title="View my LinkedIn profile">&nbsp;LinkedIn</a>
+
+                            <a class="fa fa-google-plus-square list-group-item" itemprop="url" href="https://plus.google.com/102352359605367746250" rel="me" title="View my Google+ profile">&nbsp;Google+</a>
+                    </div>
+                    </div>
                 </div>
             </div><!-- /.blog-sidebar -->
 
@@ -124,20 +132,20 @@
                     -->
             </div>
         </div><!-- /.row -->
-    </div><!-- /.container -->
 
     <footer class="blog-footer col-sm-4">
         <!-- <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
         <!-- <p><a href="#">Back to top</a></p> -->
-        <p>Build with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://lesscss.org/">Less</a>.</p>
+        <p>Built with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://lesscss.org/">Less</a>.</p>
         <p>Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
         <p>Avatar from <a href="http://illustmaker.abi-station.com/index_en.shtml">AbiStation</a>.</p>
     </footer>
+    </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
