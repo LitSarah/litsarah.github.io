@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -115,11 +119,11 @@
                     <h2 class="blog-post-title" itemprop="name">What I've Done</h2>
 
                     <dl class="portfolio">
+                      {% for repository in site.github.public_repositories %}
                         <dt class="fa fa-github-square" itemprop="itemListElement">
-                            <a itemprop="url" href="https://github.com/LitSarah/litsarah.github.io">litsarah.github.io</a>
-                        </dt>
-
-                        <dd itemprop="description">My portfolio of projects</dd>
+                            <a itemprop="url" href="{{ repository.html_url }}">{{ repository.name }}</a> </dt>
+                        <dd itemprop="description">{{ repository.description }}</dd>
+                      {% endfor %}
                     </dl>
                 </section>
                 <!-- 
