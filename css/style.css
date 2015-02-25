@@ -82,9 +82,6 @@ h6,
   margin: 0 -15px 15px;
   padding: 15px;
 }
-.sidebar-module img {
-  margin-bottom: 12px;
-}
 .sidebar-module p:last-child,
 .sidebar-module ul:last-child,
 .sidebar-module ol:last-child {
@@ -147,13 +144,6 @@ dd {
 a {
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* 
-.img-rounded {
-  border-radius: @border-radius-large;
-    -moz-border-radius:@border-radius-large;
-    -webkit-border-radius:@border-radius-large;
-  padding-bottom: (@padding-base-vertical * 2 );
-} */
 code {
   color: #337ab7;
   background-color: #eff5fb;
@@ -161,11 +151,9 @@ code {
 .well {
   text-align: center;
 }
-.well img {
-  margin-bottom: 1em;
-}
 .well .list-group {
   text-align: left;
+  margin-top: 12px;
 }
 .fa {
   font-family: FontAwesome, "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
