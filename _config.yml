@@ -12,4 +12,4 @@ timezone: America/Chicago
 gems:
     - jekyll-sitemap
 
-highlighter: pygments
+highlighter: rouge
