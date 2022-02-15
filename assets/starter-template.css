@@ -67,18 +67,18 @@
   flex-direction: row;
 }
 .header-fancy::before {
-  margin-right: 5em;
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;
   margin: auto;
+  margin-right: 0.25em;
 }
 .header-fancy::after {
-  margin-left: 5em;
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;
   margin: auto;
+  margin-left: 0.25em;
 }
 .portfolio-item > a {
   text-decoration: none;
