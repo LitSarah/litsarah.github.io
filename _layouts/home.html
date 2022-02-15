@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+<hr class="col-3 col-md-2 mb-5" />
+
+<div class="row g-5">
+  <div class="col-md">
+    {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="align-items-center">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="ms-auto">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </span>
+        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+  </div>
+
+  <div class="col-md">
+    <h2>Guides</h2>
+    <p>
+      Read more detailed instructions and documentation on using or contributing
+      to Bootstrap.
+    </p>
+    <ul class="icon-list">
+      <li>
+        <a href="../getting-started/introduction/"
+          >Bootstrap quick start guide</a
+        >
+      </li>
+      <li>
+        <a href="../getting-started/webpack/">Bootstrap Webpack guide</a>
+      </li>
+      <li>
+        <a href="../getting-started/parcel/">Bootstrap Parcel guide</a>
+      </li>
+      <li>
+        <a href="../getting-started/contribute/">Contributing to Bootstrap</a>
+      </li>
+    </ul>
+  </div>
+</div>
