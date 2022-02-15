@@ -1,0 +1,103 @@
+---
+layout: default
+title: Résumé
+---
+
+<section id="about">
+  <h1 class="text-center">I'm Sarah Little, and I am a QA Engineer</h1>
+</section>
+<section id="biography">
+  <p>
+    A healthy interest in technology runs in my blood. My grandfather repaired
+    televisions for a living. My uncle's a tinkerer. My brother administers
+    virtual machines. And days out with my mother usually involved the gentle
+    hum and chill air of server rooms.
+  </p>
+
+  <p>
+    From the days of <code>C:/Windows run</code> to quick and accurate automated tests, I seek to expand my skills in fun and interactive ways. My side projects generally involve one of my many other hobbies, such as photography, swing dancing, and bartending, which are generally more interesting than the retail systems I deal with during the day.
+  </p>
+</section>
+
+<div class="row">
+  <div class="col-md-8">
+
+    <section id="experience">
+      <h2 class="header-fancy">Experience</h2>
+
+      {% for job in site.data.experience %}
+      <h3>{{ job.company }}</h3>
+      <div class="d-flex align-items-justify">
+        <p class="me-auto text-muted">{{job.title }}</p>
+        <p class="text-muted text-uppercase">
+          {{job.startDate }} - {{job.endDate}}
+        </p>
+      </div>
+      <p>{{job.description}}</p>
+      {% endfor %}
+
+    </section>
+
+    <section id="portfolio" itemscope itemtype="http://schema.org/ItemList">
+      <h2 class="header-fancy" itemprop="name">Projects</h2>
+
+      <dl>
+
+        {% for repository in site.github.public_repositories %}
+        <dt class="fa-github-square portfolio-item" itemprop="itemListElement">
+          <a class="align-top" itemprop="url" href="{{ repository.html_url }}"
+            >{{ repository.name }}</a>
+        </dt>
+        <dd itemprop="description">{{ repository.description }}</dd>
+        {% endfor %}
+
+        <dt class="fa-envelope-o portfolio-item" itemprop="itemListElement">
+          <a
+            class="align-top"
+            itemprop="url"
+            href="http://us3.campaign-archive2.com/?u=b8ba49cb2fbd275b8760dd57f&id=b7a5d4f688"
+            >Women in Technology of the Heartland Newsletter</a>
+        </dt>
+        <dd itemprop="description">
+          Designed and created the biweekly emails for WITH from February 2014
+          to October 2014
+        </dd>
+      </dl>
+    </section>
+
+  </div>
+
+  <div class="col-md-4" >
+
+  <section id="skills">
+    <h2 class="header-fancy" itemprop="name">Skills</h2>
+
+    <ul class="tags tag-primary">
+      {% for skill in site.data.skills %}
+      <li itemprop="itemListElement">{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {%- if site.posts.size > 0 -%}
+  <section id="posts">
+  <h2 class="header-fancy">{{ page.list_title | default: "Posts" }}</h2>
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li class="align-items-center">
+      {%- assign date_format = "%b %-d, %Y"
+      -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <span class="ms-auto">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </span>
+      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></section>
+{%- endif -%}</div>
+</div>

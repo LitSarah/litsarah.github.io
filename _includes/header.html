@@ -5,17 +5,8 @@
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   <a class="navbar-brand me-auto" rel="author" href="{{ "/" | relative_url }}">
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="40"
-    height="32"
-    class="me-2"
-    viewBox="0 0 118 94"
-    role="img"
-  >
-    <title>Bootstrap</title>
-    <use xlink:href="{{ '/assets/fontawesome/brands.svg#bootstrap' | relative_url }}"></use>
-  </svg><span class="align-middle">{{ site.title | escape }}</span></a>
+    
+<img src="{{site.github.owner_gravatar_url}}" class="rounded" width="40"/><span class="align-middle ps-2">{{ site.title | escape }}</span></a>
 
 
   {%- if page_paths -%}
