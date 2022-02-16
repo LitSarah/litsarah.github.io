@@ -72,11 +72,17 @@ title: Résumé
   <section id="skills">
     <h2 class="header-fancy" itemprop="name">Skills</h2>
 
-    <ul class="tags tag-primary">
-      {% for skill in site.data.skills %}
+    <dl>
+      {% for category in site.data.skills %}
+      <dt >{{ category[0] }}</dt>
+      <dd>
+        <ul class="list-unstyled">
+      {% for skill in category[1] %}
       <li itemprop="itemListElement">{{ skill }}</li>
       {% endfor %}
-    </ul>
+    </ul></dd>
+    {% endfor %}
+  </dl>
   </section>
 
   {%- if site.posts.size > 0 -%}

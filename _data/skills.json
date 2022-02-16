@@ -1,4 +1,26 @@
-[
-  "HTML5",
-  "CSS3"
-]
+{
+  "Programming and Development": [
+    "Python",
+    "Java",
+    "Spring Boot",
+    "Git",
+    "Javascript (Node)",
+    "Bootstrap",
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Jekyll",
+    "Vue",
+    "Vuetify"
+  ],
+  "Automated Testing": [
+    "Selenium",
+    "Cucumber",
+    "Jest",
+    "HP UFT/QTP",
+    "JUnit",
+    "Postman"
+  ],
+  "Databases": ["MySQL", "Microsoft SQL", "Oracle SQL"],
+  "Documentation and Reporting": ["PowerBI", "SSRS"]
+}
