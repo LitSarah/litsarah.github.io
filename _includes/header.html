@@ -1,0 +1,31 @@
+<nav class="d-flex pb-3 mb-5 border-bottom navbar navbar-expand-lg navbar-light align-items-center">
+      
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths  | where_exp:"item",
+  "item contains '.htm'" -%}
+
+  <a class="navbar-brand me-auto" rel="author" href="{{ "/" | relative_url }}">
+    <img src="{{site.github.owner_gravatar_url}}" class="rounded" width="40"/>
+    <span class="align-middle ps-2">{{ site.title | escape }}</span>
+  </a>
+
+
+  {%- if page_paths.size > 2 -%}
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+      <ul class="navbar-nav">
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+          {%- endif -%}
+        {% endfor -%}
+      </ul>
+    </div>
+  {%- endif -%}
+</nav>

@@ -1,15 +1,14 @@
-title : LitSarah
+title: Sarah Little
+email: litsarah+github@gmail.com
+description: >
+  A quality assurance engineer who works with developers, managers, and business owners to deliver data-driven solutions. Supports local and global teams in simplifying development, operations, and QA processes by providing reliable, easily accessible tools. Trained in Agile DevOps methodologies and software development lifecycles.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://litsarah.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+markdown: kramdown
+twitter_username: litsarah
+github_username: litsarah
+linkedin_username: litsarah
 
-author :
-  name : Sarah Little
-  email : litsarah+github@gmail.com
-  github : litsarah
-  twitter : litsarah
-  linkedin: litsarah
-
-timezone: America/Chicago
-
-gems:
-    - jekyll-sitemap
-
-highlighter: rouge
+# Build settings
+plugins:
+  - jekyll-feed

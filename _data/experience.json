@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Buildertrend",
+    "location": "Omaha, NE",
+    "startDate": "December 2021",
+    "endDate": "present",
+    "title": "QA Engineer II",
+    "description": "Created and maintained automated tests using Javascript, Node.JS, Jest, and Puppeteer. Estimated, prioritzed, planned, and coordinated quality testing activities. Tracked and reported QA metrics like failed tests and test run times."
+  },
+  {
+    "company": "TD Ameritrade/Charles Schwab",
+    "location": "Omaha, NE",
+    "startDate": "December 2018",
+    "endDate": "November 2021",
+    "title": "QA Engineer II",
+    "description": "Created and supported a testing framework using Cucumber, Selenium, JUnit, and Spring Boot for a product team that had over 1,200 tests, covering batch processes, APIs, and UIs. Provided tools and guidance to reduce change management time by 50% and improve accuracy by 80%. Reduced regression testing time by 60%. Created a standard for test automation for the back office systems. Led the QA community of practice and assisted fellow QA engineers in getting their ISTQB Foundation level certification. Educated teammates on the appropriate application of different testing methodologies, frameworks, and tools and recommended additional testing to be performed outside of the team based on release content. Designed the testing workflow for the data conversion to Charles Schwab."
+  },
+  {
+    "company": "CSG International",
+    "location": "Omaha, NE",
+    "startDate": "October 2016",
+    "endDate": "December 2018",
+    "title": "Information Architect II",
+    "description": "Administrator of a large Jira instance of over 6,000 users and 1 million issues used globally along with a related Confluence instance. Created a suite of automated functional tests for both systems. Created reporting solutions in SSRS, Power BI, and Microsoft Excel for project and program management. Built several tools that simplified and automated business processes and reporting. Provided software solutions and training to support SAFe Agile DevOps practices."
+  },
+  {
+    "company": "Gordmans",
+    "location": "Omaha, NE",
+    "startDate": "September 2013",
+    "endDate": "October 2016",
+    "title": "Retail Systems Analyst",
+    "description": "Managed CRM applications and oversaw technical administration of the gRewards loyalty program of over 5 million members. Created reporting for marketing, operational, and fraud/loss prevention purposes.  Subject matter expert (SME) for installation of Micros Relate. Designed and maintained several ETL interfaces and APIs to third party reporting and marketing solutions. Provided technical support for point of sale and inventory management for over 100 stores and e-commerce."
+  },
+  {
+    "company": "Omaha's Henry Doorly Zoo",
+    "location": "Omaha, NE",
+    "startDate": "October 2008",
+    "endDate": "September 2013",
+    "title": "Computer Technician - Point of Sale",
+    "description": "Installed a new software solution for admission, retail, reservation, and membership management which consolidated 3 separate systems. Installed and maintained over 100 point of sale and back office systems. Managed data and reporting for retail sales, fraud analysis, effectiveness of advertising on attendance, and membership rates throughout the region."
+  }
+]
