@@ -23,7 +23,30 @@
       </div>
 
       <div class="col-sm-12 col-lg">
-        <p>{{- site.description | escape -}}</p>
+        <span>Powered by</span>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a
+            href="https://jekyllrb.com/"
+            ><svg width="3em" height="3em">
+              <use
+                xlink:href="{{ '/assets/images/Jekyll-logo.svg#jekyll' | relative_url }}"
+              ></use>
+            </svg></a></li>
+            <li class="list-inline-item"><a
+              href="https://getbootstrap.com/"
+              ><svg width="2em" height="2em">
+                <use
+                  xlink:href="{{ '/assets/fontawesome/brands.svg#bootstrap' | relative_url }}"
+                ></use>
+              </svg></a></li>
+              <li class="list-inline-item"><a
+                href="https://fontawesome.com/"
+                ><svg width="2em" height="2em">
+                  <use
+                    xlink:href="{{ '/assets/fontawesome/brands.svg#font-awesome' | relative_url }}"
+                  ></use>
+                </svg></a></li>
+        </ul>
       </div>
     </div>
 
