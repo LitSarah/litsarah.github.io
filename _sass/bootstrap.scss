@@ -12,6 +12,19 @@
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
 
+// Font imports
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&family=Oxygen+Mono&display=swap");
+
+// Bootstrap variable overrides
+$font-family-sans-serif: "Fira Sans", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-family-monospace: "Oxygen Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+$headings-font-family: "Merriweather", serif;
+
 // Layout & components
 @import "bootstrap/root";
 @import "bootstrap/reboot";
