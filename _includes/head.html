@@ -6,7 +6,7 @@
   {%- include indieweb.html -%}
 
   {%- seo -%}
-  <link rel="stylesheet" href="{{ " /assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -41,9 +41,10 @@
   </style>
 
   <!-- Custom styles for this template -->
-  <link href="{{ " assets/starter-template.css" | relative_url }}" rel="stylesheet" />
-  <link href="{{ " assets/highlight.css" | relative_url }}" rel="stylesheet" /> {%- feed_meta -%} {%- if
-  jekyll.environment ==
-  'production' and site.google_analytics -%} {%- include google-analytics.html
-  -%} {%- endif -%}
+  <link href="{{ 'assets/starter-template.css' | relative_url }}" rel="stylesheet" />
+  <link href="{{ 'assets/highlight.css' | relative_url }}" rel="stylesheet" />
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
 </head>
