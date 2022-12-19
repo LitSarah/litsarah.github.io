@@ -9,6 +9,7 @@ markdown: kramdown
 twitter_username: litsarah
 github_username: litsarah
 linkedin_username: litsarah
+webmentions_feed: https://webmention.io/api/mentions.html?token=qfElp_U_xg_w3nzWPsrmHw
 
 # Build settings
 plugins:
