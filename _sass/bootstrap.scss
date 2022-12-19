@@ -64,3 +64,9 @@ $headings-font-family: "Merriweather", serif;
 // Utilities
 @import "bootstrap/utilities/api";
 // scss-docs-end import-stack
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}

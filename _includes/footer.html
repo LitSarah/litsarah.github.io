@@ -1,54 +1,40 @@
-<footer class="pt-5 mt-5 text-muted border-top">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="pt-5 mt-5 text-muted border-top h-card">
+  <data class="u-url hidden" href="{{ site.url | relative_url }}"></data>
+  <img class="u-photo hidden" src="{{site.github.owner_gravatar_url}}" />
 
-
-    <div class="row">
-      <div class="col-sm">
-        <ul class="contact-list list-unstyled">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="col-sm">
-        {%- include social.html -%}
-      </div>
-
-      <div class="col-sm">
-        <span>Powered by</span>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a
-            href="https://jekyllrb.com/"
-            ><svg width="3em" height="3em">
-              <use
-                xlink:href="{{ '/assets/images/Jekyll-logo.svg#jekyll' | relative_url }}"
-              ></use>
-            </svg></a></li>
-            <li class="list-inline-item"><a
-              href="https://getbootstrap.com/"
-              ><svg width="2em" height="2em">
-                <use
-                  xlink:href="{{ '/assets/fontawesome/brands.svg#bootstrap' | relative_url }}"
-                ></use>
-              </svg></a></li>
-              <li class="list-inline-item"><a
-                href="https://fontawesome.com/"
-                ><svg width="2em" height="2em">
-                  <use
-                    xlink:href="{{ '/assets/fontawesome/brands.svg#font-awesome' | relative_url }}"
-                  ></use>
-                </svg></a></li>
-        </ul>
-      </div>
+  <div class="row">
+    <div class="col-sm">
+      <ul class="contact-list list-unstyled">
+        <li class="p-name">
+          {%- if site.author -%}
+          {{ site.author | escape }}
+          {%- else -%}
+          {{ site.title | escape }}
+          {%- endif -%}
+        </li>
+        {%- if site.email -%}
+        <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {%- endif -%}
+      </ul>
     </div>
 
+    <div class="col-sm">
+      {%- include social.html -%}
+    </div>
 
+    <div class="col-sm">
+      <span>Powered by</span>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://jekyllrb.com/"><svg width="3em" height="3em">
+              <use xlink:href="{{ '/assets/images/Jekyll-logo.svg#jekyll' | relative_url }}"></use>
+            </svg></a></li>
+        <li class="list-inline-item"><a href="https://getbootstrap.com/"><svg width="2em" height="2em">
+              <use xlink:href="{{ '/assets/fontawesome/brands.svg#bootstrap' | relative_url }}"></use>
+            </svg></a></li>
+        <li class="list-inline-item"><a href="https://fontawesome.com/"><svg width="2em" height="2em">
+              <use xlink:href="{{ '/assets/fontawesome/brands.svg#font-awesome' | relative_url }}"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
